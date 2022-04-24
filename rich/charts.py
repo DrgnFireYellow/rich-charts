@@ -1,10 +1,10 @@
 from . import print
 from .panel import Panel
 
+
 class Bar:
-    def __init__(self, max_width):
+    def __init__(self):
         self.renderable = """"""
-        self.width = max_width
         self.renderable_data = []
         self.data = []
 
@@ -33,4 +33,4 @@ if __name__ == "__main__":
     example_bar.add_sequence(5, "test", "red")
     example_bar.add_sequence(7, "test2", "yellow")
     example_bar.add_sequence(40, "test3", "blue")
-    print(Panel(example_bar))
+    print(example_bar)
